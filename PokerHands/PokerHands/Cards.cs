@@ -8,11 +8,13 @@ namespace PokerHands
 {
     class Cards
     {
+        public List<Cards> cards { get; set; }
         public string Suit { get; set; }
         public int Rank { get; set; }
         public string CardName { get; set; }
         public string CardRank { get; set; }
         public string CardSuit { get; set; }
+
         //2H AD KC 10C
         public Cards(string cardString)
         {
@@ -46,6 +48,7 @@ namespace PokerHands
             }
 
             CardName = CardRank + " Of " + CardSuit;
+            Console.WriteLine(CardName);
         }
     }
 }

@@ -10,9 +10,9 @@ namespace PokerHands
     {
         static void Main(string[] args)
         {
-            var testCards = new Cards("AS");
-            var print = "5H 5C 6S 7S KD";
-            var myHand = new Hand(print);
+            Cards testCards = new Cards("AS");
+            string print = "5H 5C 6S 7S KD";
+            Hand myHand = new Hand(print);
 
             Console.WriteLine(testCards.CardName);
             Console.ReadKey();
